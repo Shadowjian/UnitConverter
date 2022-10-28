@@ -45,6 +45,10 @@ button {
     cursor: pointer;
 }
 
+#results {
+    margin-top: 10px;
+}
+
 .conversion {
 
     width: 100%;
