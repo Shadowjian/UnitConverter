@@ -2,24 +2,43 @@
 <html lang="en">
 
 <head>
-  <title>Title</title>
+  <title>Length Converter</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div id="calc-wrapper">
-        <h4>Length Converter</h4>
-        <input id="input-feet" type="number" placeholder="input feet">
-        <button id="btn-convert" onclick="convert()">Convert ft to (in, m, yd)</button>
-        <label class="conversion" id="output-inches"></label>
-        <label class="conversion" id="output-meter"></label>
-        <label class="conversion" id="output-yard"></label>
+  <div id="calc-wrapper">
+    <h4>Length Converter</h4>
+    <div id="input-wrapper" class="form-floating mb-3">
+      <input type="email" class="form-control" id="input-feet" placeholder="input feet" value="0">
+      <label for="floatingInput">Input length in feet</label>
     </div>
-    
-    <script src="script.js"></script>
+
+    <button id="btn-convert" onclick="convert()">Convert ft to (inches, meter, yard)</button>
+    <h4>Results:</h4>
+    <label class="conversion" id="output-inches">0.00 in</label>
+    <label class="conversion" id="output-meter">0.00 m</label>
+    <label class="conversion" id="output-yard">0.00 yd</label>
+    <button id="btn-reset" onclick="reset()">Reset</button>
+  </div>
+
+  <script src="script.js"></script>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>

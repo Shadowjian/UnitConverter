@@ -9,11 +9,19 @@ let yard = document.getElementById('output-yard')
 
 // onclick
 function convert () {
-    inches.innerHTML = `${parseFloat(feet.value) * 12} inches`;
-    meter.innerHTML = `${parseFloat(feet.value) * 0.3408} m`;
-    yard.innerHTML = `${parseFloat(feet.value) * 0.33} yd`;
+    inches.innerHTML = `${(feet.value * 12).toFixed(2)} in`;
+    meter.innerHTML = `${(feet.value * 0.3408).toFixed(2)} m`;
+    yard.innerHTML = `${(feet.value * 0.33).toFixed(2)} yd`;
 }
 
+// onclick
+function reset() {
+    feet.value = 0;
+    inches.innerHTML = "0.00 in";
+    meter.innerHTML = "0.00 m";
+    yard.innerHTML = "0.00 yd";
+
+}
 
 
 

@@ -9,10 +9,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
-    height: 400px;
+    width: 400px;
     border: solid 1px black;
     padding: 20px;
+}
+
+#input-wrapper {
+    width: 100%;
 }
 
 #input-feet {
@@ -21,16 +24,32 @@
     padding: 10px;
     text-align: right;
 }
-#btn-convert {
+
+button {
+    border: none;
+    box-shadow: 2px 2px 5px gray;
+    margin: 5px 0;
     width: 100%;
-    padding: 10px;
+    padding: 15px;
+}
+
+#btn-convert:hover {
+    background-color: lightseagreen;
+    color: white;
+    cursor: pointer;
+}
+
+#btn-reset:hover {
+    background-color: lightcoral;
+    color: white;
+    cursor: pointer;
 }
 
 .conversion {
+
     width: 100%;
-    height: 20px;
     margin: 10px;
-    padding: 20px;
+    padding: 15px;
     text-align: right;
 }
 
