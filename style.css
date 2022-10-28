@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#calc-wrapper {
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    border: solid 1px black;
+    padding: 20px;
+}
+
+#input-feet {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: right;
+}
+#btn-convert {
+    width: 100%;
+    padding: 10px;
+}
+
+.conversion {
+    width: 100%;
+    height: 20px;
+    margin: 10px;
+    padding: 20px;
+    text-align: right;
+}
+
+.conversion:nth-of-type(odd) {
+    background-color: lightgray;
+}
+.conversion:nth-of-type(even) {
+    background-color: lightcoral;
+}
